@@ -1,0 +1,179 @@
+#COVID-19 Support Program
+
+import pandas as pd
+import datetime
+import time
+repeat = True
+print("Hello, and welcome to the COVID-19 Support Program for Canadians.")
+time.sleep(2)
+while (repeat == True):
+    print("Please select the program you would want to gain more information on:")
+    print("1 - COVID-19 Current Data \n2 - COVID-19 Donations \n3 - Domestic Violence Help \n4 - Medications and Pharmacies \n5 - Education and Resources \n6 - COVID-19 Volunteering \n7 - Reliable News Outlets to get COVID-19 Information")
+    print ("Please select one number from the list above: ")
+    again = True
+    while (again == True):
+        option = int(input())
+        counter = 1
+        same = False
+        while (same == False):
+            if (counter == option):
+                same = True
+                again = False
+            counter+= 1
+            if counter == 9:
+                again = True
+                same = True
+                print("Please pick a valid option:")
+
+    if (option == 1):
+        rawData = pd.read_csv('https://raw.githubusercontent.com/datasets/covid-19/master/data/countries-aggregated.csv', parse_dates=['Date'])
+        country = ['Canada']
+        today = [datetime.date.today() - datetime.timedelta(days=1)]
+        yesterday = datetime.date.today() - datetime.timedelta(days=1)
+        rawData = rawData[rawData['Country'].isin(country)]
+        rawData = rawData[rawData['Date'].isin(today)]
+        yesterday = yesterday.strftime("%B %d, %Y")
+        rawConfirmed = rawData['Confirmed']
+        rawRecovered = rawData['Recovered']
+        rawDeaths = rawData['Deaths']
+        confirmed = int(rawConfirmed)
+        recovered = int(rawRecovered)
+        deaths = int(rawDeaths)
+        print("The number of confirmed cases in Canada as of " + yesterday + " is " + str(confirmed))
+        print("The number of recovered cases in Canada as of " + yesterday + " is " + str(recovered))
+        print("The number of deaths in Canada as of " + yesterday + " is " + str(deaths))
+
+    elif (option == 2):
+        print("You have chosen to donate to the COVID-19 relief and research fund. Thank you for your selflessness.")
+        print("You will be provided with multiple links to a variety of different causes. Although all help the COVID - 19 cause, they all help different people.")
+        print("1 - UNICEF Foundation")
+        print("2 - Food Banks Canada")
+        print("3 - Red Cross Canada")
+        print("4 - Canadian Government(Goes to a variety of causes)")
+        choice = int(input("Where would you like to donate to? (Please indicate a number)"))
+        again2 = True
+        while again2 == True: 
+            if choice == 1:
+                print("Donate at: https://www.unicef.ca/en/what-we-do/donate-to-coronavirus?ea.tracking.id=20DIEM12CVE&gclid=Cj0KCQjwtLT1BRD9ARIsAMH3BtW2sc1zJuZfyVY2T01rcpdDRHVpa1gqZP0KFU3gDuEdEtSypMz80SgaAoTrEALw_wcB")
+                again2 = False
+            elif choice == 2:
+                print("Donate at: https://www.foodbankscanada.ca/COVID-19.aspx")
+                again2 = False
+            elif choice == 3:
+                print("Donate at: https://www.redcross.ca/how-we-help/current-emergency-responses/covid-19-%E2%80%93-novel-coronavirus")
+                again2 = False
+            elif choice == 4:
+                print("Donate at: https://www.canadahelps.org/en/donate-to-coronavirus-outbreak-response/")
+                again2 = False
+            else:
+                print("I apologize, that is not an option.")
+                print("Thank you for your desire to help. However, this list is not extensive, and a multitude of other NGOs exist online. Thank you and stay safe.")
+                choice = int(input("Please input another number, that one was not in the range of possible numbers: "))
+                 
+    elif (option == 3):
+        print("Im so sorry for whatever you are going through right now. I promise things will get better.")
+        print("The helpline for Canadian women across the nation is, 1-866-293-4483")
+        print("Or visit them at https://canadianwomen.org/")
+        time.sleep(2)
+        print(" ")
+        print("If you have suicidal thoughts, contact 1-800-273-8255, or go to https://www.crisisservicescanada.ca/en/")
+        time.sleep(2)
+        print(" ")
+        print("Just remember, you are never alone, and self-harm is never an option.")
+
+    elif (option == 4):
+        print("I apologize for your current situation")
+        print("If you are feeling unwell or have any life-thretening symptoms, please call 9-1-1 immediatly.")
+        time.sleep(0.6)
+        print("Go to https://plushcare.com/online-prescription-refills/ to consult with a doctor, and within 15 minutes a perscription will be waiting for you at the pharmacy, or it can delivered to you.")
+        time.sleep(0.5)
+        print("However, if you can, you can always do to your nearest pharmacy to refill your perscription")
+        time.sleep(0.5)
+        print("Remember to always abide by the social distancing rules, and always stay 6 feet from anyone else.")
+        time.sleep(1)
+        print("That, constant washing of hands, and wearing masks and gloves should ensure you and your family are safe!")
+        time.sleep(0.5)
+        print("However, if you are unable to go to a pharmacy in person, https://plushcare.com/online-prescription-refills/ is always avaliable to provide you with a face-to-face conversation with a doctor, and the perscription can be delivered to you.")
+        time.sleep(0.5)
+        print("Whatever you choose to do, remember to stay safe and healthy!")
+    
+    elif (option == 5):
+        print("There are many resources avainable to Canadians to use to learn many new skills! Aside from the ones that are shown below, there are also many other resources available to use!")
+        print("Select from the websites below to learn more about each website:")
+        print("1 - EdX \n2 - Coursera \n3 - Duolingo \n4 - Codeacademy \n5 - Skillshare")
+        again5 = True
+        while (again5 == True):
+            option5 = int(input())
+            counter5 = 1
+            same5 = False
+            while (same5 == False):
+                if (counter5 == option5):
+                    same5 = True
+                    again5 = False
+                counter5 += 1
+                if counter5 == 7:
+                    again5 = True
+                    same5 = True
+                    print("Please pick a valid option:")
+        if (option5 == 1):
+            print("EdX is an education platform that offers many university-level courses in a variety of subjects from universities and companies from all around the world. Many courses also offer certificates for a fee.")
+            print("Go on \"www.edx.org\" for more information on the courses offered")
+        elif (option5 == 2):
+            print("Coursera is a website that offers many online courses and specializations in different fields.")
+            print("Go on \"www.coursera.org\" to learn more about the courses offered")
+        elif (option5 == 3):
+            print("Duolingo is a website and app that is used to learn another language. It currently offers 35 different courses to English speakers.")
+            print("Visit \"www.duolingo.com\" for more information and to get started.")
+        elif (option5 == 4):
+            print("Codeacademy is a online platform that offers free coding classes in 12 different programming languages. However, to unlock more content, you must pay a monthly fee.")
+            print("To learn more, visit \"www.codecademy.com\"")
+        else:
+            print("Skillshare is a website that offers online classes in many different fields and topics! Some categories include design, photography, and web development.")
+            print("To learn more, go on \"www.skillshare.com\"")
+
+    elif (option == 6):
+        print("REMINDER: please consider volunteering ONLY if you are feeling well. If you feel sick/unwell, please do not volunteer.")
+        print("During this pandemic, there are many places and institutions looking for volunteers! Below is a list of types of organizations that are actively seeking volunteers.")
+        print("1 - Senior Homes \n2 - Hospitals \n3 - Non-profit Organizations")
+        print("Please select a number from the options above:")
+        again6 = True
+        while (again6 == True):
+            option6 = int(input())
+            counter6 = 1
+            same6 = False
+            while (same6 == False):
+                if (counter6 == option6):
+                    same6 = True
+                    again6 = False
+                counter6 += 1
+                if counter6 == 5:
+                    again6 = True
+                    same6 = True
+                    print("Please pick a valid option:")
+        if (option6 == 1):
+            print("There are some volunteer opportunities at senior homes. However, due to some outbreaks at senior homes, many homes have suspended trainng for new volunteers")
+            print("There are some senior homes, such as Chartwell Retirement Residences, Markhaven Home for Seniors, and the senior homes run by the City of Toronto")
+            print("Visit their websites for more information")
+        elif (option6 == 2):
+            print("Most hospitals have suspended volunteer activities, however, as the pandemic slows down, hospitals will start to accept new volunteers.")
+            print("Visit the website for your local hospital or clinic to find more information")
+        else:
+            print("Many non-profit organizations are taking more volunteers")
+            print("The Canadian Red Cross, the Ontario Government, and the Canadian Federal Government are looking for volunteers to help during the pandemic")
+            print("For more information, visit their respective websites regularly")
+
+    else:
+        print("There are a lot of reliable news sources for information on the COVID-1 outbreak in Canada") 
+        print("These include: \n- The Globe and Mail \n- CTV \n- CBC")
+        print("There are also more regional specific news outlets, such as: \n- The Vancouver Sun in Vancouver \n- The Toronto Star and CP24 in Toronto \n- La Presse and TVA nouvelles in Montreal")
+    print("Would you like to make another selection? Enter 1 for Yes, and enter 2 for No")
+    userRepeat = int(input())
+    while (userRepeat != 1 and userRepeat != 2):
+        print("Please pick a valid option:")
+        userRepeat = int(input())
+    if (userRepeat == 1):
+        repeat = True
+    else:
+        repeat = False
+print("Thank you for using the COVID-19 Support Program for Canadians! Stay home and stay safe!")
+time.sleep(3)
