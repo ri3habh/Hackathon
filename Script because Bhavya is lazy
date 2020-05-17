@@ -1,0 +1,18 @@
+Hi, so Rishabh Sharma, Neil Sharma, Anish Basu and Bhavya Shah made the COVID-19 Help Center in order to give people assistance
+through a support program, a virtual helper and a risk assessment tool. Our website makes use of HTML and CSS. 
+
+Our assistance tool that makes use of a COVID-19 Support Program for Canadians can help with Donations, World Statistics, Domestic Abuse,
+Medical Help, Learning/educational resources and finally, Reliable News Sources. We know that getting access to information is key during 
+these difficult times so with the use of Python, panda, datetime and time modules, we were able to develop a program that can remedy this.
+
+For this demo, let us choose option 1 for current data. By fetching data from a CSV file, we can see the confirmed cases, recovered cases 
+and deaths. 
+
+Next, through the use of an embed and information provided from the ECDC, we can look at the confirmed cases gloablly with a map and 
+we also a chart representing the data. The following chart below depicts the confirmed cases using global, American and Russian statistics
+since they have the highest cases. 
+
+Our COVID-19 Risk Assessment tool makes use of Infermedica models and data collection and with an embed, we were able to set up a test that
+allows users to determine whether or not they have COVID-19 and action to take. Lets go through it. 
+
+*****Run through the test and just print the results*************
