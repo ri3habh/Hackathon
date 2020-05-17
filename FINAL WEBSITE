@@ -80,7 +80,7 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding">Interactive Guidelines</div>
-        <img src="https://github.com/ri3habh/Hackathon/blob/master/covid19.png" alt="House" style="width:99%">
+        <iframe src="https://albumizr.com/a/EuEL" scrolling="no" frameborder="0" allowfullscreen width="700" height="400"></iframe>
       </div>
     </div>
 <iframe height="400px" width="100%" src="https://repl.it/repls/EmptyGrandioseOutliner?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>   <!-- About Section -->
