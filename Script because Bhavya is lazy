@@ -9,7 +9,7 @@ For this demo, let us choose option 1 for current data. By fetching data from a 
 and deaths. 
 
 Next, through the use of an embed and information provided from the ECDC, we can look at the confirmed cases gloablly with a map and 
-we also a chart representing the data. The following chart below depicts the confirmed cases using global, American and Russian statistics
+we also have a chart representing the data. The following chart below depicts the confirmed cases using global, American and Russian statistics
 since they have the highest cases. 
 
 Our COVID-19 Risk Assessment tool makes use of Infermedica models and data collection and with an embed, we were able to set up a test that
