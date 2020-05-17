@@ -34,7 +34,7 @@
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Assistance</h3>
-<iframe id="hf-iframe" src="https://covid19.infermedica.com/en" width = "100%" height = "1000px" ></iframe>
+
 
   </div>
 
@@ -80,7 +80,7 @@
    <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    
+
     <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="600px"></iframe>
 
 <div class="flourish-embed flourish-chart" data-src="story/230110"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
@@ -88,7 +88,7 @@
 <div class="w3-container">
   <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
 </div>
-
+<iframe id="hf-iframe" src="https://covid19.infermedica.com/en" width = "100%" height = "1000px" ></iframe>
 <!-- End page content -->
 </div>
 
